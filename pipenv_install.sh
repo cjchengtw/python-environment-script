@@ -25,3 +25,13 @@ echo "Installed pipx"
 echo "Install pipenv"
 pipx install pipenv
 echo "Installed pipenv"
+
+# install jupyter lab
+echo "Install jupyter lab"
+pipx install jupyter lab
+echo "Done"
+
+# install pycryptodome
+echo "Install pycryptodome"
+python3 -m pip install --user pycryptodome
+echo "Done"
