@@ -1,5 +1,6 @@
 #! /bin/bash
 set -e
+export SYS_PASSWORD=0000
 
 echo "Install dependencies"
 echo $SYS_PASSWORD | sudo -S apt install apt-transport-https ca-certificates curl software-properties-common
