@@ -25,7 +25,7 @@ echo $SYS_PASSWORD | sudo -S  apt update -y
 echo "Done"
 
 echo "Install Docker CE"
-echo $SYS_PASSWORD | sudo -S  apt  install docker-ce
+echo $SYS_PASSWORD | sudo -S  apt  install docker-ce -y
 echo "Done"
 
 echo "Start and Enable docker service"
