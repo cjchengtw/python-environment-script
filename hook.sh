@@ -1,5 +1,6 @@
 #! /bin/bash
 export SYS_PASSWORD=0000
+export DEBIAN_FRONTEND=noninteractive
 # . ~/.bashrc
 wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/pipenv_install.sh
 wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/pyenv_install.sh
