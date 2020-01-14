@@ -1,4 +1,5 @@
 #! /bin/bash
+export SYS_PASSWORD=0000
 wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/pipenv_install.sh
 wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/pyenv_install.sh
 wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/docker_install.sh
