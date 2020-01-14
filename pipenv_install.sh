@@ -28,7 +28,7 @@ echo "Installed pipenv"
 
 # install jupyter lab
 echo "Install jupyter lab"
-pipx install jupyter lab
+pipx install jupyterlab
 echo "Done"
 
 # install pycryptodome
