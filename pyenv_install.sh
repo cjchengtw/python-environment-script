@@ -18,8 +18,8 @@ echo $SYS_PASSWORD | sudo -S apt install make gcc git vim curl build-essential l
 echo $SYS_PASSWORD | sudo -S dpkg --configure -a
 echo $SYS_PASSWORD | sudo rm -rf /var/lib/dpkg/info
 echo $SYS_PASSWORD | sudo mkdir /var/lib/dpkg/info
-echo $SYS_PASSWORD | sudo apt update
-echo $SYS_PASSWORD | sudo apt -f install  
+echo $SYS_PASSWORD | sudo apt update -y
+echo $SYS_PASSWORD | sudo apt -f install -y 
 echo "=== Installed ==="
 
 
