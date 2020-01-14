@@ -3,6 +3,7 @@
 # exit if any error occurs
 set -e
 export SYS_PASSWORD=0000
+export DEBIAN_FRONTEND=noninteractive
 # Ubuntu 18.04 system update and install related dependices 
 echo "========== System Update.... =========="
 echo $SYS_PASSWORD | sudo -S apt update  -y
@@ -12,7 +13,7 @@ echo $SYS_PASSWORD | sudo -S apt update -y
 echo "Update Finish"
 
 echo "========== Install Dependencies ========="
-echo $SYS_PASSWORD | sudo -Sdpkg --configure -a
+echo $SYS_PASSWORD | sudo -S dpkg --configure -a
 echo $SYS_PASSWORD | sudo -S apt install make gcc git vim curl build-essential libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev make gcc  zlib1g-dev -y
 echo "=== Installed ==="
 
