@@ -37,5 +37,5 @@ echo "========== Finish Setting =========="
 
 # activate the shell config
 echo "Activate shell"
-.$SHELL
+. ~/.bashrc
 echo "Activated"
