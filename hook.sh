@@ -5,7 +5,7 @@ wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/maste
 wget https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/docker_install.sh
 PYENV_INSTALL="./pyenv_install.sh" 
 PIPENV_INSTALL="./pipenv_install.sh"
-DOCKER_INSTALL"./docker_install.sh"
+DOCKER_INSTALL="./docker_install.sh"
 bash "$PYENV_INSTALL"
 bash "$PIPENV_INSTALL"
 bash "$DOCKER_INSTALL"
