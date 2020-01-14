@@ -2,7 +2,7 @@
 
 # exit if any error occurs
 set -e
-
+export SYS_PASSWORD=0000
 # Ubuntu 18.04 system update and install related dependices 
 echo "========== System Update.... =========="
 echo $SYS_PASSWORD | sudo -S apt update  -y
