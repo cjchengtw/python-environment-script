@@ -3,13 +3,13 @@ set -e
 export SYS_PASSWORD=0000
 
 echo "Install dependencies"
-echo $SYS_PASSWORD | sudo -S apt install apt-transport-https ca-certificates curl software-properties-common
+echo $SYS_PASSWORD | sudo -S apt install apt-transport-https ca-certificates curl software-properties-common -y
 echo "Done"
 
 echo "Add key"
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | echo $SYS_PASSWORD | sudo apt-key add -
-curl -O https://packages.cloud.google.com/apt/doc/apt-key.gpg
-echo $SYS_PASSWORD | sudo -S  apt-key add  apt-key.gpg
+wget https://download.docker.com/linux/ubuntu/gpg
+echo $SYS_PASSWORD | sudo -S  apt-key add  gpg
 echo "Done"
 
 echo "Verify key"
@@ -21,7 +21,7 @@ echo $SYS_PASSWORD | sudo -S add-apt-repository "deb [arch=amd64] https://downlo
 echo "Done"
 
 echo "System Update Again"
-echo $SYS_PASSWORD | sudo -S  apt update
+echo $SYS_PASSWORD | sudo -S  apt update -y
 echo "Done"
 
 echo "Install Docker CE"
