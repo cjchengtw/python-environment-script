@@ -16,6 +16,10 @@ echo "========== Install Dependencies ========="
 echo $SYS_PASSWORD | sudo -S dpkg --configure -a
 echo $SYS_PASSWORD | sudo -S apt install make gcc git vim curl build-essential libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev make gcc  zlib1g-dev -y
 echo $SYS_PASSWORD | sudo -S dpkg --configure -a
+echo $SYS_PASSWORD | sudo rm -rf /var/lib/dpkg/info
+echo $SYS_PASSWORD | sudo mkdir /var/lib/dpkg/info
+echo $SYS_PASSWORD | sudo apt update
+echo $SYS_PASSWORD | sudo apt -f install  
 echo "=== Installed ==="
 
 
