@@ -43,5 +43,5 @@ echo "========== Finish Setting =========="
 
 # activate the shell config
 echo "Activate shell"
-. ~/.bashrc
+exec bash
 echo "Activated"
