@@ -9,7 +9,7 @@ echo "Installed python sussessfully"
 
 # change to the system versin
 echo "Change python version"
-pyenv global  3.7.6
+pyenv global  3.7.3
 echo "Changed python version"
 
 # upgrade pip
