@@ -5,7 +5,7 @@
  WSL Enable
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-`
+```
 
 wget -O- https://raw.githubusercontent.com/cjchengtw/python-environment-script/master/pyenv_install.sh | bash
 
