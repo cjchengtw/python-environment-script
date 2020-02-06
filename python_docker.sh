@@ -4,7 +4,7 @@ export SYS_PASSWORD=0000
 
 # install python version by pyenv
 echo "Install PYthon by pyenv"
-pyenv install 3.7.6
+pyenv install 3.7.3
 echo "Installed python sussessfully"
 
 # change to the system versin
