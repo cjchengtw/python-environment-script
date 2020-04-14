@@ -33,5 +33,5 @@ echo $SYS_PASSWORD |  sudo -S systemctl start docker.service
 echo $SYS_PASSWORD |  sudo -S systemctl enable docker.service
 
 echo "Add user to group"
-echo $SYS_PASSWORD | sudo -aG docker $USER
+echo $SYS_PASSWORD | sudo usermod -aG docker $USER
 echo "Done"
